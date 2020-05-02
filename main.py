@@ -33,8 +33,14 @@ class gameOfLife():
 
 
     def draw(self):
-        for i in range(1, self.nRows):
-            for i in range()
+        for i in range(1, self.nRows - 1):
+            for j in range(1, self.nCollumns):
+                if self.arr[i][j].nextState == False:
+                    print("0")
+                    self.arr[i][j].state == self.arr[i][j].nextState
+                else:
+                    print("X")
+                    self.arr[i][j].state == self.arr[i][j].nextState
 
 
     def play(self):
@@ -54,4 +60,4 @@ print(test.arr)
 
 for i in range(0, 2):
     for j in range(0, 2):
-        test.arr[i][j].test(i, j)
+        pass
