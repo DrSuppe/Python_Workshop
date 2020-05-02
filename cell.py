@@ -6,12 +6,15 @@ class myTinyCell:
         self.state = state
         self.xPos = xPos
         self.yPos = yPos
+        determineAdjacentCells(pupulation)
+
+    def determineAdjacentCells(self, population):
         if xPos - 1 < 0 :
 
         if xPos
         self.adjacentCells = [population[xPos,yPos], population[], population[], population[], population[], population[], population[], population[],]
 
-    def determineAdjacentCells(self, population):
+
 
     def countNeighbours(self):
 
