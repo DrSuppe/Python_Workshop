@@ -29,8 +29,13 @@ class gameOfLife():
             for j in range(-1, 2):
                 if self.arr[i][j].state == True:
                     nNeighbours += 1
-
         return nNeighbours
+
+
+    def draw(self):
+        for i in range(1, self.nRows):
+            for i in range()
+
 
     def play(self):
         pass
