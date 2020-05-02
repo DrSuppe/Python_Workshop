@@ -1,6 +1,20 @@
-import numpy as np
+import pygame
 from random import randint
+background_colour = (255,255,255)
+background_colour2 = (255,0,0)
+(width, height) = (300, 200)
+screen = pygame.display.set_mode((width, height))
+pygame.display.set_caption('Tutorial 1')
+screen.fill(background_colour)
+pygame.display.flip()
+running = True
 
 
-for i in range(0, 100):
-    print(randint(0, 1))
+
+while running:
+  for event in pygame.event.get():
+    if event.type == pygame.QUIT:
+      running = False
+
+  pygame.draw.rect(screen, (randint(0, 255), randint(0, 255), randint(0, 255)), (0,0,30,30))
+  pygame.display.flip()
