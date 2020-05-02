@@ -1,8 +1,6 @@
 import numpy as np
+from random import randint
 
-cols = 3
-rows = 3
 
-for i in range(-1, 2):
-    for j in range(-1, 2):
-        print(i, j)
+for i in range(0, 100):
+    print(randint(0, 1))
