@@ -3,7 +3,7 @@ class myTinyCell:
     def __init__(self):
         self.state = False
         self.nextState = False
-
+  
     def countNeighbours(self, y, x, arr):
         nNeighbours = 0
         for i in range(-1, 2):
@@ -15,3 +15,4 @@ class myTinyCell:
             nNeighbours -= 1
 
         return nNeighbours
+
