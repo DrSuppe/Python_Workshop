@@ -1,0 +1,15 @@
+Zellen
+    Status
+    nächsten Status
+
+    nachbarn zählen
+
+Spiellogik
+    Spielfeld
+        zweidimensionales Array
+            startwerte
+    nächster Zeitschritt
+        aktuellen Zeitschrit auswerten
+
+grafische Ausgabe
+    soll programm aufrufen

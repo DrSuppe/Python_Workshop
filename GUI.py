@@ -1,7 +1,7 @@
 import pygame
 import time
 from main import gameOfLife
-nRows = 40
+nRows = 100
 nCollumns = 40
 
 
@@ -39,7 +39,7 @@ while True:
   pygame.display.flip()
   draw(test.arr)
   test.nextCycle()
-  time.sleep(0.2)
+ # time.sleep(0.2)
   print("neueRunde")
 
 
