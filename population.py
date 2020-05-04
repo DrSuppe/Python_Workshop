@@ -9,14 +9,9 @@ class myCellPopulation:
 
         self.worldOfLife = [[myTinyCell(False, i, j) for i in range(self.xMax)] for j in range(self.yMax)]
 
-        print("erster index: ", len(self.worldOfLife))
-        print("zweiter index: ", len(self.worldOfLife[0]))
-
         for j in range(1, self.yMax-1):
             for i in range(1, self.xMax-1):
-                print("i : ", i)
-                print("j : ", j)
-                print("")
+
                 if randint(0, 1) == 1:
                     self.worldOfLife[j][i].state = True
 

@@ -4,10 +4,6 @@ class myTinyCell:   # eine Klasse myTinyCell erstellen
         self.state = state  #status der Zelle - lbendig oder Tot
         self.xPos = xPos    #Position der Zelle in X Richtung
         self.yPos = yPos    #Position der Zelle in Y Richtung
-        self.neighbours = 0
-
-          # bei der Erstellung einer Zelle, soll jede Zelle feststellen, wer Ihre Nachbarn sind
-                                            #       Das ist notwendig um Randfälle abzufangen, wo die Suche nach Nachbarzellen aus dem Feld laufen könnte.
 
 
     def countNeighbours(self, population):
