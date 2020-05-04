@@ -1,35 +1,18 @@
 class myTinyCell:
 
-    neighbours = 0
+    def __init__(self):
+        self.state = False
+        self.nextState = False
+  
+    def countNeighbours(self, y, x, arr):
+        nNeighbours = 0
+        for i in range(-1, 2):
+            for j in range(-1, 2):
+                if arr[y + i][x +j].state == True:
+                    nNeighbours += 1
 
-    def __init__(self, state, xPos, yPos, population):
-        self.state = state
-        self.xPos = xPos
-        self.yPos = yPos
-        determineAdjacentCells(pupulation)
+        if arr[y][x].state == True:
+            nNeighbours -= 1
 
-    def determineAdjacentCells(self, population):
-        if xPos - 1 < 0 :
+        return nNeighbours
 
-        if xPos
-        self.adjacentCells = [population[xPos,yPos], population[], population[], population[], population[], population[], population[], population[],]
-
-
-
-    def countNeighbours(self):
-
-        self.neighbours = 0
-        for i in self.adjacentCells:
-            if i.state == True:
-                self.neighbours += 1
-
-    def changeState(self):
-        if self.state == False and self.neighbours == 3:
-            self.state = True
-
-        if self.state == True:
-            if self.neighbours > 2:
-                self.state = False
-
-            if self.neighbours < 3:
-                self.state = False
