@@ -2,7 +2,7 @@ from population import myCellPopulation
 import time
 
 def main():
-    ourPopulation = myCellPopulation(20, 20)
+    ourPopulation = myCellPopulation(10, 10)
 
     while True:
         ourPopulation.getNextTimestep()

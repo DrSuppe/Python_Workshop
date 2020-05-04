@@ -1,5 +1,7 @@
 from cell import myTinyCell
 from random import randint
+import os
+
 
 class myCellPopulation:
 
@@ -28,6 +30,7 @@ class myCellPopulation:
 
 
     def showWolrdOfLife(self):
+        print("--"* self.yMax)
         for i in range(1,self.xMax-1):
             print("")
             for j in range(1,self.yMax-1):
@@ -35,6 +38,6 @@ class myCellPopulation:
                 if self.worldOfLife[j][i].state == True:
                     print("X ", end=" ")
                 else:
-                    print(". ", end=" ")
+                    print("  ", end=" ")
         print("")
-        print("-----------------------------------------------------------------------------------------------------")
+        print("--"* self.yMax)
