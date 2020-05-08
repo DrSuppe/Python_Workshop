@@ -1,15 +1,25 @@
 Zellen
-    Status
-    nächsten Status
+    Status --> Boolean
+    nächsten Status --> Boolean
 
-    nachbarn zählen
+    Nachbarn Zählen -->Funktion
+        wie viele Nachbarn sind am Leben/tot
+
 
 Spiellogik
+    Regeln
+        Fallunterscheidung --> If
+    nächstenSchritt berechnen
+        for Schleife
     Spielfeld
-        zweidimensionales Array
-            startwerte
-    nächster Zeitschritt
-        aktuellen Zeitschrit auswerten
+        Array 2D
 
-grafische Ausgabe
-    soll programm aufrufen
+Ausgabe
+    Konsolenausgabe
+    Grafische Ausgabe
+
+
+
+ 0 0 X
+ 0 X 0
+ X X 0
