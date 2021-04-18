@@ -66,10 +66,9 @@ def draw(Spielfeld):        # da wir jetzt unser Spielfeld anders darstellen wol
                                                                                 #   wichtig, um die alten gezeichneten Zellen
                                                                                 #   der vorherigen Iteration zu uebreschreiben
 
+
 # Jetzt haben wir die gesamte Funktionalitaet fuer eine GUI zusammen und muessen im Grunde nur noch eine Schleife schreiben,
 #   die immer die neuen Iterationen bestimmt. dazu nutzen wir hier eine "while" schleife. Wir k
-
-
 
 if __name__ == "__main__":      # Diese If Abfrage sorgt dafür, dass die Datei nur ausgeführt wird, wenn man diese Datei
                                 #   ausfuehrt. Das ist praktisch, weil man die Funktionen, die wir definiert haben evtl
